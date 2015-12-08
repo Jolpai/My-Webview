@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //stringVariable = strl;
                 Toast.makeText (MainActivity.this, strl, Toast.LENGTH_SHORT).show();
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setMessage("Wow someone clicked on the button  !!")
-                        .setTitle("Response Form HTML");
+                builder.setMessage("Wow someone clicked on the button   !!")
+                        .setTitle(strl);
 
                 AlertDialog dialog = builder.create();
                 dialog.show();
