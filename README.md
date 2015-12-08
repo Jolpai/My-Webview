@@ -80,3 +80,29 @@ img{
 
 ```
 ![ok](https://github.com/Jolpai/My-Webview/blob/master/img/htm_css_2015-12-08-13-05-25.png)
+
+To show the response of html button click in java ... we need a little bit more code in onCreate() method and add a button in index.html file.
+
+```html
+<button id="h1" type="button" value="Response Form HTML" onclick="ok.performClick(this.value);">Click Me</button>
+```
+
+``` java
+webView.addJavascriptInterface(new Object()
+        {
+            @JavascriptInterface           // For API 17+
+            public void performClick(String strl)
+            {
+                //stringVariable = strl;
+                Toast.makeText (MainActivity.this, strl, Toast.LENGTH_SHORT).show();
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("Wow someone clicked on the button  !!")
+                        .setTitle(strl);
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        }, "ok");
+```
+
+![](https://github.com/Jolpai/My-Webview/blob/master/img/button_click_2015-12-08-14-27-33.png)
