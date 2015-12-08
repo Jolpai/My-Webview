@@ -1,6 +1,7 @@
 package com.jolpai.mywebview;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -56,11 +57,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                 //stringVariable = strl;
                 Toast.makeText (MainActivity.this, strl, Toast.LENGTH_SHORT).show();
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("Wow someone clicked on the button  !!")
+                        .setTitle("Response Form HTML");
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
         }, "ok");
 
-        webView.addJavascriptInterface(valid, "valid");
-        webView.addJavascriptInterface(refuse, "refuse");
     }
 
     @Override
