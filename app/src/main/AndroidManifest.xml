@@ -15,6 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Jquery" >
+        </activity>
+        <activity android:name=".HtmlCSS" >
+        </activity>
+        <activity
+            android:name=".HtmlToJavaClickEvent"
+            android:label="@string/title_activity_html_to_java_click_event"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".JavaScript" >
+        </activity>
     </application>
 
 </manifest>

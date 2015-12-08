@@ -1,32 +1,15 @@
 <html>
-    <head><LINK href="css/myStyle.css" type="text/css" rel="stylesheet"/></head>
+    <head><LINK href="file:///android_asset/css/myStyle.css" type="text/css" rel="stylesheet"/></head>
+
 
     <body>
-        <script language="javascript">
 
-               function validClick()
-               {
-                  valid.performClick();
-                  alart();
-                  document.getElementById("ok").value = "J'accepte";
-               }
-               function refuseClick()
-               {
-                  refuse.performClick();
-                  document.getElementById("no").value = "Je refuse";
-               }
-        </script>
+        <img class="img" src="file:///android_asset/img/ok.png">
 
-        <button type="button" id="ok" style="font-weight: 700; margin-right: 20px;" onclick="validClick();">J'accepte</button>
-        <button type="button"  id="no" onclick="ok.performClick();">OK</button>
+        <p > This above image is  shown from assets folder... </p>
+        <p>Custom font <span style="color:red">'trado'</span> from asset folder has been applied on this text</p>
+        <!--<button id="h1" type="button" value="button 1 clicked" onclick="ok.performClick(this.value);">Button 1</button>-->
 
-        <img src="file:///android_asset/img/ok.png">
-
-        <h1>My First CSS Example</h1>
-
-        <p>This is a paragraph.</p>
-
-        <p>B Homa: مخصص</p>
 
     </body>
 </html>

@@ -28,13 +28,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 "<body><img src=\"file:///android_asset/img/ok.png\">" +
                      "<h1>My First CSS Example</h1>\n" +
-                     "<p>This is a paragraph.</p>" +
-                     "<p>B Homa: مخصص</p>" +
+                     "<p onclick=\"ok.performClick(this.value);\">This is a paragraph. </p>" +
+                     "<p>B Homa: مخصص </p>" +
                 "<button type=\"button\" value=\"someValue\" onclick=\"ok.performClick(this.value);\">OK</button>" +
 
                 "</body></html>";
-        webView.loadDataWithBaseURL("file:///android_asset/", sHtmlTemplate, "text/html", "utf-8",null);
-       // webView.loadUrl("file:///android_asset/html/index.html");
+       // webView.loadDataWithBaseURL("file:///android_asset/", sHtmlTemplate, "text/html", "utf-8",null); getAssets()
+        webView.loadUrl("file:///android_asset/html/index.html");
+
 
 
 

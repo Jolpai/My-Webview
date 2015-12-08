@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyWebview</string>
+    <string name="title_activity_html_to_java_click_event">HtmlToJavaClickEvent</string>
 </resources>
