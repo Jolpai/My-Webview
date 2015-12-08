@@ -79,5 +79,4 @@ img{
 }
 
 ```
-and finally this is the screenshot 
 ![ok](https://github.com/Jolpai/My-Webview/blob/master/img/htm_css_2015-12-08-13-05-25.png)
