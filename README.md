@@ -105,4 +105,4 @@ webView.addJavascriptInterface(new Object()
         }, "ok");
 ```
 
-![](https://github.com/Jolpai/My-Webview/blob/master/img/button_click_2015-12-08-14-27-33.png)
+![](https://github.com/Jolpai/My-Webview/blob/master/img/Screenshot_2015-12-08-14-27-33.png)
